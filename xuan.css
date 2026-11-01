@@ -1,7 +1,17 @@
-/*测试背景（后期删掉！！！）*/
-body{
-  background-color:red;
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #72CFF2,
+        #FFFFFF
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .pet {
-    width: 250px;
+    width: 220px;
 }
