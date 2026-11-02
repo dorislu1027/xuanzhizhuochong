@@ -37,6 +37,9 @@ body {
 
     touch-action: none;
 }
+.angry{
+    display:none;
+}
 
 .pet:active {
     cursor: grabbing;
