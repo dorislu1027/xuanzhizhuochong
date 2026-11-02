@@ -26,3 +26,18 @@ body {
         transform:scale(1.0025);
     }
 }
+/*拖拽*/
+.pet {
+    width: 220px;
+
+    cursor: grab;
+
+    user-select: none;
+    -webkit-user-drag: none;
+
+    touch-action: none;
+}
+
+.pet:active {
+    cursor: grabbing;
+}
