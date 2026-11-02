@@ -23,7 +23,7 @@ body {
         transform:scale(1.00);
     }
     50%{
-        transform:scale(1.0025);
+        transform:scale(1.025);
     }
 }
 /*拖拽*/
