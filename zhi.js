@@ -1,4 +1,4 @@
-const pet = document.getElementById("pet");
+const pet = document.getElementById("pet-container");
 
 // 是否正在拖动
 let isDragging = false;
