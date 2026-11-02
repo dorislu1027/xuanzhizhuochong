@@ -1,4 +1,3 @@
-
 const pet = document.getElementById("pet");
 
 // 是否正在拖动
