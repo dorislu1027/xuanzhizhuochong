@@ -14,4 +14,15 @@ body {
 
 .pet {
     width: 220px;
+    animation: breathe 3s ease-in-out infinite;
+}
+
+/*呼吸动画*/
+@keyframes breathe{
+    0%,100%{
+        transform:scale(1.00);
+    }
+    50%{
+        transform:scale(1.025);
+    }
 }
