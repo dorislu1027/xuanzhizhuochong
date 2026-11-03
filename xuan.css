@@ -46,9 +46,7 @@ body {
 
     touch-action: none;
 }
-.angry{
-    display:none;
-}
+
 #particles {
   position: fixed;
   inset: 0;
