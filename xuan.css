@@ -82,3 +82,6 @@ body {
 .pet:active {
     cursor: grabbing;
 }
+.angry{
+    display:none;
+}
