@@ -57,7 +57,10 @@ pet.addEventListener("pointercancel", function() {
 
 });
 if(isDragging === true){
-    
+     pet.src = "璇芷生气.png";  
+}
+if(isDragging === falsee){
+     pet.src = "xuanzhi.png";  
 }
 for (let i = 0; i < 50; i++) {
 const star = document.createElement("span");
