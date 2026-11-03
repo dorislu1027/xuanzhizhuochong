@@ -49,7 +49,38 @@ body {
 .angry{
     display:none;
 }
+#particles {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+.particle {
+  width: 18px;
+  height: 18px;
+/*生成粒子*/
+  background: radial-gradient(
+    circle,
+    currentColor 0%,
+    color-mix(in srgb, currentColor 35%, transparent) 15%,
+    transparent 70%
+  );
+  opacity: 0.7;
+  filter: blur(2px);
+  animation:
+    float var(--timing) ease-in-out infinite alternate;
+}
 
+/*粒子漂浮*/
+@keyframes float {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(var(--move-x), var(--move-y));
+  }
+}
 .pet:active {
     cursor: grabbing;
 }
