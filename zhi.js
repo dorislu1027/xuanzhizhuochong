@@ -53,34 +53,6 @@ pet.addEventListener("pointercancel", function() {
     isDragging = false;
 
 });
-const petContainer = document.getElementById("pet-container");
-
-let y = 100;          // 当前高度
-let velocity = 0;     // 下落速度
-let gravity = 0.5;    // 重力
-let ground = 400;     // 地面位置
-
-function fall() {
-
-    // 重力让速度逐渐增加
-    velocity += gravity;
-
-    // 根据速度改变位置
-    y += velocity;
-
-    // 检查是否碰到地面
-    if (y >= ground) {
-        y = ground;
-        velocity = 0;
-    }
-
-    petContainer.style.top = y + "px";
-
-    requestAnimationFrame(fall);
-}
-if(isDragging == false){
-    fall();
-}
 for (let i = 0; i < 50; i++) {
 const star = document.createElement("span");
 star.textContent = "";
