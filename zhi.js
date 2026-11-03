@@ -2,6 +2,9 @@ const pet = document.getElementById("pet-container");
 //粒子特效
 const particles = document.getElementById("particles");
 const colors = ["#A5E5F8", "#E5C46B", "#FFFFFF"];
+//不耐烦
+const angry = document.getElementById("pet");
+
 // 是否正在拖动
 let isDragging = false;
 
@@ -53,6 +56,9 @@ pet.addEventListener("pointercancel", function() {
     isDragging = false;
 
 });
+if(isDragging === true){
+    
+}
 for (let i = 0; i < 50; i++) {
 const star = document.createElement("span");
 star.textContent = "";
