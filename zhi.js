@@ -58,7 +58,7 @@ const petContainer = document.getElementById("pet-container");
 let y = 100;          // 当前高度
 let velocity = 0;     // 下落速度
 let gravity = 0.5;    // 重力
-let ground = 777;     // 地面位置
+let ground = 400;     // 地面位置
 
 function fall() {
 
@@ -78,8 +78,9 @@ function fall() {
 
     requestAnimationFrame(fall);
 }
-
-fall();
+if(isDragging == false){
+    fall();
+}
 for (let i = 0; i < 50; i++) {
 const star = document.createElement("span");
 star.textContent = "";
