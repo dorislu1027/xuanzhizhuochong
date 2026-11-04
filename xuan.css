@@ -12,28 +12,20 @@ body {
     align-items: center;
 }
 
-.pet {
+.normal {
     width: 220px;
     animation: breathe 3s ease-in-out infinite;
-    animation: floating 12s ease-in--out infinite;
 }
 
 /*呼吸动画*/
 @keyframes breathe{
     0%,100%{
-        transform:scale(1.00);
+        transform:translateY(0px) scale(1.00);
     }
     50%{
-        transform:scale(1.025);
+        transform:translateY(5px) scale(1.025);
     }
 }
-@keyframes floating{
-    0%,100%{
-        transform:translateX(0px) translateY(0px);
-    }
-    50%{
-        transform:translateX(0px) translateY(5px);
-    }
 }
 /*拖拽*/
 .pet {
@@ -55,8 +47,9 @@ body {
   z-index: 0;
 }
 .particle {
-  width: 18px;
-  height: 18px;
+  display:block;
+  width: 8px;
+  height: 8px;
 /*生成粒子*/
   background: radial-gradient(
     circle,
