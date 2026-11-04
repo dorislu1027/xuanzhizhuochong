@@ -83,5 +83,6 @@ body {
     cursor: grabbing;
 }
 .angry{
+    width:220px;
     display:none;
 }
