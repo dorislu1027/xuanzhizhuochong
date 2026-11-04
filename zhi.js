@@ -3,7 +3,9 @@ const pet = document.getElementById("pet-container");
 const particles = document.getElementById("particles");
 const colors = ["#A5E5F8", "#E5C46B", "#FFFFFF"];
 //不耐烦
-const angry = document.getElementById("pet-container");
+const angry = document.getElementById("angry");
+//平常
+const normal = document.getElementById("normal");
 
 // 是否正在拖动
 let isDragging = false;
@@ -30,7 +32,8 @@ pet.addEventListener("pointerdown", function(e) {
 
     // 防止拖动时鼠标脱离图片
     pet.setPointerCapture(e.pointerId);
-
+    normal.style.display = "none";
+    angry.style.display = "block";
 });
 
 // 移动鼠标
@@ -47,21 +50,18 @@ pet.addEventListener("pointermove", function(e) {
 pet.addEventListener("pointerup", function() {
 
     isDragging = false;
-
+     normal.style.display = "block";
+     angry.style.display = "none";
 });
 
 // 取消拖动
 pet.addEventListener("pointercancel", function() {
 
     isDragging = false;
-
+    normal.style.display = "block";
+    angry.style.display = "none";
 });
-if(isDragging === true){
-     angry.src = "璇芷生气.png";  
-}
-if(isDragging === false){
-     angry.src = "xuanzhi.png";  
-}
+
 for (let i = 0; i < 50; i++) {
 const star = document.createElement("span");
 star.textContent = "";
