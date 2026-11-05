@@ -12,11 +12,14 @@ body {
     align-items: center;
 }
 
-#pet img {
+.normal {
     width: 220px;
     animation: breathe 3s ease-in-out infinite;
 }
-
+.angry{
+    width:200px;
+    animation: breathe 3s ease-in-out infinite;
+}
 /*呼吸动画*/
 @keyframes breathe{
     0%,100%{
