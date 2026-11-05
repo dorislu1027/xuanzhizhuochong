@@ -17,7 +17,7 @@ body {
     animation: breathe 3s ease-in-out infinite;
 }
 .angry{
-    width:200px;
+    width:180px;
     animation: breathe 3s ease-in-out infinite;
 }
 /*呼吸动画*/
