@@ -18,6 +18,8 @@ let offsetY = 0;
 pet.addEventListener("pointerdown", function(e) {
 
     isDragging = true;
+    normal.style.visibility="hidden";
+    angry.style.visibility="visible";
 
     // 计算鼠标在图片中的位置
     const rect = pet.getBoundingClientRect();
@@ -32,8 +34,6 @@ pet.addEventListener("pointerdown", function(e) {
 
     // 防止拖动时鼠标脱离图片
     pet.setPointerCapture(e.pointerId);
-    normal.style.display = "none";
-    angry.style.display = "block";
 });
 
 // 移动鼠标
@@ -50,16 +50,17 @@ pet.addEventListener("pointermove", function(e) {
 pet.addEventListener("pointerup", function() {
 
     isDragging = false;
-     normal.style.display = "block";
-     angry.style.display = "none";
+       normal.style.visibility="visible";
+       angry.style.visibility="hidden";
+
 });
 
 // 取消拖动
 pet.addEventListener("pointercancel", function() {
 
     isDragging = false;
-    normal.style.display = "block";
-    angry.style.display = "none";
+     normal.style.visibility="visible";
+     angry.style.visibility="hidden";
 });
 
 for (let i = 0; i < 50; i++) {
