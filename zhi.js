@@ -6,7 +6,15 @@ const colors = ["#A5E5F8", "#E5C46B", "#FFFFFF"];
 const angry = document.getElementById("angry");
 //平常
 const normal = document.getElementById("normal");
+const words = ["干嘛","哼","别拖了","有完没完","......","...下不为例","好吧","嗯..."];
+const speech = document.getElementById("speech");
 
+//click：当角色被点击触发
+pet.addEventListener("click",function(){
+    const randomtext=Math.floor(Math.random() * words.length);
+    //textcontent:显示文字
+    speech.textcontent=words[randomtext];
+})
 // 是否正在拖动
 let isDragging = false;
 
@@ -15,7 +23,7 @@ let offsetX = 0;
 let offsetY = 0;
 
 // 按下鼠标
-pet.addEventListener("pointerdown", function(e) {
+pet.addEventListener("pointerdown", function(e){
 
     isDragging = true;
     normal.style.visibility="hidden";
