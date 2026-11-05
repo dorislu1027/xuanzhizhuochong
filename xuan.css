@@ -12,7 +12,7 @@ body {
     align-items: center;
 }
 
-.normal {
+#pet img {
     width: 220px;
     animation: breathe 3s ease-in-out infinite;
 }
