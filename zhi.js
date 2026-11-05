@@ -95,14 +95,3 @@ star.style.setProperty("--move-y", moveY + "px");
 //把时间交给CSS
 star.style.setProperty("--timing",timing+"s");
 }
-
-//debug的，可以留着
-const debug = document.getElementById("debug");
-
-pet.addEventListener("pointercancel", function() {
-    debug.textContent = "拖拽被取消了！";
-});
-
-pet.addEventListener("lostpointercapture", function() {
-    debug.textContent = "指针捕获丢失了！";
-});
