@@ -6,7 +6,7 @@ const colors = ["#A5E5F8", "#E5C46B", "#FFFFFF"];
 const angry = document.getElementById("angry");
 //平常
 const normal = document.getElementById("normal");
-const words = ["干嘛","哼","别拖了","有完没完","......","...下不为例","好吧","嗯..."];
+const words = ["干嘛","哼","别拖了","有完没完","......","...下不为例","好吧","嗯...","舍得来看我了？","你怎么知道我想你了"];
 const speech = document.getElementById("speech");
 
 //click：当角色被点击触发
