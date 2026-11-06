@@ -87,3 +87,11 @@ body {
     left: 0;
     visibility: hidden;
 }
+#speech{
+    padding: 10px 16px;
+    color:#FFFFFF;
+    font-size:35px;
+    position: absolute;
+    top: -65px;
+    left: 50%;
+}
