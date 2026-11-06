@@ -12,8 +12,8 @@ const speech = document.getElementById("speech");
 //click：当角色被点击触发
 pet.addEventListener("click",function(){
     const randomtext=Math.floor(Math.random() * words.length);
-    //textcontent:显示文字
-    speech.textcontent=words[randomtext];
+    //textContent:显示文字
+    speech.textContent=words[randomtext];
 })
 // 是否正在拖动
 let isDragging = false;
