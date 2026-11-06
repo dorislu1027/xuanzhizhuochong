@@ -29,7 +29,6 @@ body {
         transform:translateY(5px) scale(1.025);
     }
 }
-}
 #particles {
   position: fixed;
   inset: 0;
@@ -63,12 +62,9 @@ body {
     transform: translate(var(--move-x), var(--move-y));
   }
 }
-.pet:active {
+#pet:active {
     cursor: grabbing;
 }
-.angry{
-    width:220px;
-    display:none;
 }
 /* 图片容器 */
 #pet {
@@ -81,7 +77,7 @@ body {
     display: block;
     pointer-events: none;
     -webkit-user-drag: none;
-    animation: pet-motion 3s ease-in-out infinite;
+    animation: breathe 3s ease-in-out infinite;
 }
 
 /* 生气图片叠在正常图片上面 */
