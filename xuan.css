@@ -1,15 +1,30 @@
-body {
+body{
     margin: 0;
     min-height: 100vh;
     background: linear-gradient(
-        135deg,
-        #72CFF2,
-        #FFFFFF
+        120deg,
+        #DDF7FF,
+        #EFFBFF,
+        #FFFFFF,
+        #FFF9EB,
+        #F9E8BC,
+        #DDF7FF
     );
+    background-size: 300% 300%;
+    animation: flowingBackground 16s ease infinite;
+}
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/*背景动态*/
+@keyframes flowingBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .normal {
